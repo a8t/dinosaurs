@@ -1,0 +1,22 @@
+1) SELECT COUNT(*) FROM dinos;
+331
+
+2) SELECT * FROM dinos
+    WHERE period = 'Jurassic';
+
+3) SELECT COUNT(*) FROM dinos
+    WHERE period = 'Cretaceous';
+=> 218
+
+4) SELECT * FROM dinos
+    WHERE period = 'Jurassic' OR period = 'Cretaceous'
+    ORDER BY species;
+
+5) SELECT * FROM dinos
+    WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
+
+6) UPDATE dinos SET name = 'shorty' WHERE length = (SELECT MIN(length) FROM dinos);
+
+7) SELECT * FROM dinos
+    ORDER BY name
+    LIMIT 1;
