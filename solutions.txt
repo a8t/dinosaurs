@@ -15,7 +15,8 @@
 5) SELECT * FROM dinos
     WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
 
-6) UPDATE dinos SET name = 'Shorty' 
+6) UPDATE dinos 
+    SET name = 'Shorty' 
     WHERE length = (SELECT MIN(length) FROM dinos);
 
 7) SELECT * FROM dinos
